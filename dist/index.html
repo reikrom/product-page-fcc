@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script type="text/javascript" src="scripts.js"></script>
+		<title>Product Page [FCC]</title>
+	</head>
+
+	<body>
+		<div class="nav">
+			<div class="nav__logo">Sugare</div>
+			<ul class="nav__menu">
+				<li class="nav__menu__item"><a href="#home" class="active">Home</a></li>
+				<li class="nav__menu__item">
+					<a onclick="toggleIcon()" href="#Features" class="active">Features</a>
+				</li>
+				<li class="nav__menu__item">
+					<a href="#Plans" class="active">Plans</a>
+				</li>
+				<li class="nav__menu__item">
+					<a href="#Pricing" class="active">Pricing</a>
+				</li>
+				<li class="nav__menu__item">
+					<a href="#Support" class="active">Support</a>
+				</li>
+				<li class="nav__menu__item">
+					<button class="button-secondary">Get Started</button>
+				</li>
+			</ul>
+			<i
+				id="menu__close"
+				class="fa fa-close nav__dropdown__toggle__close"
+				onclick="dropdown()"
+				style="display: none"
+			></i>
+			<i
+				id="menu__bars"
+				class="fa fa-bars nav__dropdown__toggle__bars"
+				onclick="dropdown()"
+				style="display: block"
+			></i>
+			<div style="display: none" id="nav__dropdown" class="nav__dropdown">
+				<ul class="nav__dropdown__menu">
+					<li class="nav__dropdown__menu__item"><a href="#home">Home</a></li>
+					<li class="nav__dropdown__menu__item">
+						<a href="#Features">Features</a>
+					</li>
+					<li class="nav__dropdown__menu__item"><a href="#Plans">Plans</a></li>
+					<li class="nav__dropdown__menu__item">
+						<a href="#Pricing">Pricing</a>
+					</li>
+					<li class="nav__dropdown__menu__item">
+						<a href="#Support">Support</a>
+					</li>
+					<li class="nav__dropdown__menu__item">
+						<button class="button-secondary">Get Started</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

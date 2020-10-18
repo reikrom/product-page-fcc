@@ -1,0 +1,61 @@
+.nav {
+	display: flex;
+	height: 56px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	font-family: "Segoe UI";
+	font-weight: bold;
+	font-size: 30px;
+	text-align: left;
+	color: #6c63ff;
+	margin-left: 20px;
+}
+
+.nav__menu {
+	display: none;
+}
+
+.nav__dropdown__toggle__close {
+	padding: 12px;
+	font-size: 28px !important;
+	margin-right: 20px;
+	color: #ffffff;
+	z-index: 1;
+}
+.nav__dropdown__toggle__bars {
+	padding: 12px;
+	font-size: 28px !important;
+	margin-right: 20px;
+	z-index: 1;
+}
+
+.nav__dropdown {
+	background: url(./assets/mobile-menu-bg.svg);
+	background-position: 0 -160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	position: absolute;
+	width: 100%;
+	border: 1px solid red;
+	height: 100vh;
+	top: 0;
+	padding: 50px 20px;
+
+	@media (max-width: 560px) {
+		display: none;
+	}
+}
+
+.nav__dropdown__menu__item,
+.nav__dropdown__menu__item a {
+	font-family: "Segoe UI";
+	font-weight: normal;
+	font-size: 20px;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 20px;
+}

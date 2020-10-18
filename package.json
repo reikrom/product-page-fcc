@@ -1,0 +1,10 @@
+{
+	"name": "product-page-fcc",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+    "css" : "node-sass -o dist\\css src\\styles -w"
+	}
+}
+
