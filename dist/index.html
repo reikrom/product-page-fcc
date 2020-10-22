@@ -3,19 +3,30 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-		<script type="text/javascript" src="scripts.js"></script>
+
 		<title>Product Page [FCC]</title>
 	</head>
 
-	<body>
+	<body id="body">
 		<div class="nav">
+			<div class="nav__purpleBlob"></div>
 			<div class="nav__logo">Sugare</div>
 			<ul class="nav__menu">
 				<li class="nav__menu__item"><a href="#home" class="active">Home</a></li>
@@ -32,7 +43,7 @@
 					<a href="#Support" class="active">Support</a>
 				</li>
 				<li class="nav__menu__item">
-					<button class="button-secondary">Get Started</button>
+					<button class="button button--secondary">Get Started</button>
 				</li>
 			</ul>
 			<i
@@ -47,7 +58,8 @@
 				onclick="dropdown()"
 				style="display: block"
 			></i>
-			<div style="display: none" id="nav__dropdown" class="nav__dropdown">
+			<div id="nav__dropdown" class="nav__dropdown nav__dropdown--hidden">
+				<!-- <div class="nav__dropdown__overlay"></div> -->
 				<ul class="nav__dropdown__menu">
 					<li class="nav__dropdown__menu__item"><a href="#home">Home</a></li>
 					<li class="nav__dropdown__menu__item">
@@ -61,10 +73,240 @@
 						<a href="#Support">Support</a>
 					</li>
 					<li class="nav__dropdown__menu__item">
-						<button class="button-secondary">Get Started</button>
+						<button class="button button--secondary">Get Started</button>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<div class="splitContentSection container">
+			<div class="splitContentSection__textContent">
+				<h2 class="splitContentSection__textContent__title">
+					Maximize your business growth
+				</h2>
+				<p class="splitContentSection__textContent__paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum
+					est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.
+					Mauris
+				</p>
+				<button class="button button--primary">Get Started</button>
+			</div>
+			<div class="splitContentSection__imageContainer">
+				<img
+					class="splitContentSection__image"
+					src="assets/illustration-2.svg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<div class="splitContentSection container">
+			<div class="splitContentSection__textContent">
+				<h2 class="splitContentSection__textContent__title">
+					Maximize your business growth
+				</h2>
+				<p class="splitContentSection__textContent__paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum
+					est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.
+					Mauris
+				</p>
+				<button class="button button--primary">Get Started</button>
+			</div>
+			<div class="splitContentSection__imageContainer order-1">
+				<img
+					class="splitContentSection__image"
+					src="assets/illustration-1.svg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<div class="plansSection">
+			<div class="sectionHeading container">
+				<h2 class="sectionHeading__title">Choose one of our plans</h2>
+				<p class="sectionHeading__paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div id="scrollTest" class="overflow">
+				<div class="overflow__itemWrapper container">
+					<div id="plan1" class="plansSection__card">
+						<div>
+							<div class="plansSection__card__title">Starter</div>
+							<div class="plansSection__card__description">
+								Starter features for your business to grow.
+							</div>
+						</div>
+						<div>
+							<div class="plansSection__card__price">$9</div>
+							<div class="plansSection__card__priceDescription">
+								PER USER, MONTH
+							</div>
+						</div>
+						<button class="button button--primary">Free trial</button>
+					</div>
+					<div id="plan2" class="plansSection__card">
+						<div>
+							<div class="plansSection__card__title">professional</div>
+							<div class="plansSection__card__description">
+								Starter features for your business to grow.
+							</div>
+						</div>
+						<div>
+							<div class="plansSection__card__price">$29</div>
+							<div class="plansSection__card__priceDescription">
+								PER USER, MONTH
+							</div>
+						</div>
+						<button class="button button--primary">Free trial</button>
+					</div>
+					<div id="plan3" class="plansSection__card">
+						<div>
+							<div class="plansSection__card__title">advanced</div>
+							<div class="plansSection__card__description">
+								Starter features for your business to grow.
+							</div>
+						</div>
+						<div>
+							<div class="plansSection__card__price">$99</div>
+							<div class="plansSection__card__priceDescription">
+								PER USER, MONTH
+							</div>
+						</div>
+						<button class="button button--primary">Free trial</button>
+					</div>
+				</div>
+			</div>
+			<div id="planPagination" class="pagination">
+				<span id="dot1" class="pagination__dot pagination__dot--active"></span>
+				<span id="dot2" class="pagination__dot"></span>
+				<span id="dot3" class="pagination__dot"></span>
+			</div>
+		</div>
+		<div class="feedbackSection container">
+			<div class="sectionHeading">
+				<h2 class="sectionHeading__title">Our customer feedbacks</h2>
+				<p class="sectionHeading__paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="feedbackSection__cardWrapper">
+				<div class="feedbackCard">
+					<div class="feedbackCard__stars">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i>
+					</div>
+					<div class="feedbackCard__review">
+						Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiu
+						tempor incididunt ut labore et dolore magna.
+					</div>
+					<div class="profile">
+						<div class="profile__picture">
+							<img src="./assets/person.jpg" alt="" />
+						</div>
+						<div class="profile__text">
+							<div class="user__nameSurname">John Doe</div>
+							<div class="user__location">United Kingdom</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedbackCard">
+					<div class="feedbackCard__stars">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i>
+					</div>
+					<div class="feedbackCard__review">
+						Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiu
+						tempor incididunt ut labore et dolore magna.
+					</div>
+					<div class="profile">
+						<div class="profile__picture">
+							<img src="./assets/person.jpg" alt="" />
+						</div>
+						<div class="profile__text">
+							<div class="user__nameSurname">John Doe</div>
+							<div class="user__location">United Kingdom</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedbackCard">
+					<div class="feedbackCard__stars">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i><i class="fa fa-star"></i
+						><i class="fa fa-star"></i>
+					</div>
+					<div class="feedbackCard__review">
+						Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiu
+						tempor incididunt ut labore et dolore magna.
+					</div>
+					<div class="profile">
+						<div class="profile__picture">
+							<img src="./assets/person.jpg" alt="" />
+						</div>
+						<div class="profile__text">
+							<div class="user__nameSurname">John Doe</div>
+							<div class="user__location">United Kingdom</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="promotionBanner">
+				<div>
+					<div class="promotionBanner__title">Are you excited for Sugare?</div>
+					<div class="promotionBanner__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing.
+					</div>
+				</div>
+				<button class="button button--promo">Learn more</button>
+			</div>
+		</div>
+		<div class="footer container">
+			<div class="companySignature">
+				<div class="companySignature__logo">Sugare</div>
+				<div class="companySignature__slogan">Make your business sweet</div>
+				<div class="companySignature__copyright">
+					&copy; 2020 All Rights Reserved.
+				</div>
+			</div>
+			<div class="sitemapWrapper">
+				<div class="sitemap">
+					<div class="sitemap__title">Product</div>
+					<div class="sitemap__page">Features</div>
+					<div class="sitemap__page">Platform</div>
+					<div class="sitemap__page">Contact</div>
+					<div class="sitemap__page">Payouts</div>
+					<div class="sitemap__page">Pricing</div>
+				</div>
+				<div class="sitemap">
+					<div class="sitemap__title">Company</div>
+					<div class="sitemap__page">About</div>
+					<div class="sitemap__page">Jobs</div>
+					<div class="sitemap__page">Blog</div>
+					<div class="sitemap__page">Teams</div>
+					<div class="sitemap__page">Privacy</div>
+				</div>
+				<div class="sitemap">
+					<div class="sitemap__title">Platforms</div>
+					<div class="sitemap__page">Shopify</div>
+					<div class="sitemap__page">Wordpress</div>
+					<div class="sitemap__page">Squarespace</div>
+					<div class="sitemap__page">Wix</div>
+					<div class="sitemap__page">Hubspot</div>
+				</div>
+				<div class="sitemap">
+					<div class="sitemap__title">Support</div>
+					<div class="sitemap__page">Features</div>
+					<div class="sitemap__page">Platform</div>
+					<div class="sitemap__page">Contact</div>
+					<div class="sitemap__page">Payouts</div>
+					<div class="sitemap__page">Pricing</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
 	</body>
 </html>
