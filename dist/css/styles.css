@@ -9,7 +9,8 @@ body {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */ }
+  /* Firefox */
+  font-family: "Open Sans"; }
 
 a {
   text-decoration: none; }
@@ -39,7 +40,6 @@ li {
     .nav {
       margin-top: 70px; } }
   .nav__logo {
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 30px;
     text-align: left;
@@ -71,7 +71,6 @@ li {
         background-position: revert;
         background-size: 100%; } }
   .nav__menu__item {
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 18px;
     text-align: left; }
@@ -82,6 +81,19 @@ li {
           margin-right: 40px; } }
     .nav__menu__item a {
       color: #ffffff; }
+
+.navBar--sticky {
+  position: fixed;
+  top: 0px;
+  background: white;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  margin-top: 0;
+  z-index: 6; }
+  @media (min-width: 740px) {
+    .navBar--sticky {
+      height: 100px;
+      padding: 10px; } }
 
 .button {
   height: 48px;
@@ -154,7 +166,6 @@ li {
 
 .nav__dropdown__menu__item,
 .nav__dropdown__menu__item a {
-  font-family: "Open Sans";
   font-weight: normal;
   font-size: 20px;
   text-align: left;
@@ -175,7 +186,6 @@ li {
     width: 100%;
     margin-bottom: 30px; }
   .splitContentSection__textContent__title {
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 42px;
     letter-spacing: 0.02em;
@@ -184,7 +194,6 @@ li {
     color: #1c2b45;
     margin-bottom: 40px; }
   .splitContentSection__textContent__paragraph {
-    font-family: "Open Sans";
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -360,6 +369,15 @@ li {
   font-size: 10px;
   opacity: 0.5; }
 
+.EmbededVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 120px 0; }
+  .EmbededVideo iframe {
+    border: 5px solid #6c63ff; }
+
 .promotionBanner {
   max-width: 1020px;
   margin: 120px auto 0;
@@ -374,7 +392,6 @@ li {
   .promotionBanner__title {
     font-size: 36px;
     margin-bottom: 24px;
-    font-family: "Open Sans";
     font-weight: bold; }
   .promotionBanner__description {
     margin-bottom: 24px; }
@@ -388,7 +405,6 @@ li {
       flex-wrap: wrap; } }
 
 .companySignature {
-  font-family: "Open Sans";
   margin-right: 100px;
   padding: 30px; }
   .companySignature__logo {
@@ -415,7 +431,6 @@ li {
   flex-wrap: wrap; }
 
 .sitemap {
-  font-family: "Open Sans";
   padding: 30px; }
   .sitemap__title {
     font-size: 24px;
@@ -425,3 +440,21 @@ li {
     margin-bottom: 18px;
     font-size: 18px;
     color: #707070; }
+
+.promo__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 740px) {
+    .promo__form {
+      flex-direction: row; } }
+
+.promo__input {
+  padding: 12px 20px;
+  flex-basis: 1000px;
+  max-height: 70px;
+  margin: 0 0 16px 0;
+  height: 70px; }
+  @media (min-width: 740px) {
+    .promo__input {
+      margin: 0 16px 0 0; } }

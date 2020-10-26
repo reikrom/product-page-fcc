@@ -47,3 +47,21 @@ function scrollToCard(cards, n) {
 		inline: "start",
 	});
 }
+
+const navBar = document.querySelector("#navbar");
+window.onscroll = function () {
+	stickyHeader();
+};
+
+const stickyHeader = () => {
+	if (window.scrollY > 90) {
+		navBar.classList.add("navBar--sticky");
+	} else navBar.classList.remove("navBar--sticky");
+};
+
+const dropdownMenu = document.querySelector(".nav__dropdown__menu");
+dropdownMenu.addEventListener("click", e => {
+	if ((e.target.nodeName = "A")) {
+		dropdown();
+	}
+});

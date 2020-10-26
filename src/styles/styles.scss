@@ -10,6 +10,7 @@ body::-webkit-scrollbar {
 body {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+	font-family: "Open Sans";
 }
 
 a {
@@ -45,7 +46,6 @@ li {
 	}
 
 	&__logo {
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 30px;
 		text-align: left;
@@ -81,7 +81,6 @@ li {
 		}
 	}
 	&__menu__item {
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 18px;
 		text-align: left;
@@ -94,6 +93,21 @@ li {
 		a {
 			color: #ffffff;
 		}
+	}
+}
+
+.navBar--sticky {
+	position: fixed;
+	top: 0px;
+	background: white;
+	width: 100%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+	margin-top: 0;
+	z-index: 6;
+	@media (min-width: 740px) {
+		height: 100px;
+		padding: 10px;
+		// margin: -2px;
 	}
 }
 
@@ -181,7 +195,6 @@ li {
 }
 .nav__dropdown__menu__item,
 .nav__dropdown__menu__item a {
-	font-family: "Open Sans";
 	font-weight: normal;
 	font-size: 20px;
 	text-align: left;
@@ -206,7 +219,6 @@ li {
 	}
 
 	&__textContent__title {
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 42px;
 		letter-spacing: 0.02em;
@@ -217,7 +229,6 @@ li {
 	}
 
 	&__textContent__paragraph {
-		font-family: "Open Sans";
 		font-weight: normal;
 		font-size: 12px;
 		letter-spacing: 0.02em;
@@ -437,6 +448,17 @@ li {
 	}
 }
 
+.EmbededVideo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	padding: 120px 0;
+	& iframe {
+		border: 5px solid #6c63ff;
+	}
+}
+
 .promotionBanner {
 	max-width: 1020px;
 	margin: 120px auto 0;
@@ -452,7 +474,6 @@ li {
 	&__title {
 		font-size: 36px;
 		margin-bottom: 24px;
-		font-family: "Open Sans";
 		font-weight: bold;
 	}
 
@@ -472,7 +493,6 @@ li {
 }
 
 .companySignature {
-	font-family: "Open Sans";
 	margin-right: 100px;
 	padding: 30px;
 	&__logo {
@@ -504,7 +524,6 @@ li {
 	flex-wrap: wrap;
 }
 .sitemap {
-	font-family: "Open Sans";
 	padding: 30px;
 
 	&__title {
@@ -517,5 +536,26 @@ li {
 		margin-bottom: 18px;
 		font-size: 18px;
 		color: #707070;
+	}
+}
+
+.promo {
+	&__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 740px) {
+			flex-direction: row;
+		}
+	}
+	&__input {
+		padding: 12px 20px;
+		flex-basis: 1000px;
+		max-height: 70px;
+		margin: 0 0 16px 0;
+		height: 70px;
+		@media (min-width: 740px) {
+			margin: 0 16px 0 0;
+		}
 	}
 }
