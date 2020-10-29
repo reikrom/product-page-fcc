@@ -63,5 +63,6 @@ const dropdownMenu = document.querySelector(".nav__dropdown__menu");
 dropdownMenu.addEventListener("click", e => {
 	if ((e.target.nodeName = "A")) {
 		dropdown();
+		toggleOverflow();
 	}
 });
