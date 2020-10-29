@@ -48,7 +48,7 @@ function scrollToCard(cards, n) {
 	});
 }
 
-const navBar = document.querySelector("#navbar");
+const navBar = document.querySelector("#nav-bar");
 window.onscroll = function () {
 	stickyHeader();
 };
@@ -59,10 +59,17 @@ const stickyHeader = () => {
 	} else navBar.classList.remove("navBar--sticky");
 };
 
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+
 const dropdownMenu = document.querySelector(".nav__dropdown__menu");
 dropdownMenu.addEventListener("click", e => {
-	if ((e.target.nodeName = "A")) {
+	if (e.target.hash === "#home") {
+		topFunction();
 		dropdown();
-		toggleOverflow();
+	} else if ((e.target.nodeName = "A")) {
+		dropdown();
 	}
 });

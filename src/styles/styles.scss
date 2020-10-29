@@ -455,6 +455,8 @@ li {
 	height: 100vh;
 	padding: 120px 0;
 	& iframe {
+		width: 100%;
+		max-width: 580px;
 		border: 5px solid #6c63ff;
 	}
 }
